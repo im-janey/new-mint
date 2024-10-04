@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screens/home.dart';
 import 'package:flutter_application_1/screens/map/detailpage.dart';
 
@@ -86,7 +86,7 @@ class _SearchState extends State<Search> {
             padding: EdgeInsets.only(top: 5, right: 20),
             child: TextButton(
               onPressed: () {
-                Navigator.push(
+                Navigator.pop(
                   context,
                   MaterialPageRoute(builder: (context) => Home()),
                 );

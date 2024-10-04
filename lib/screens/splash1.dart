@@ -15,7 +15,6 @@ class _Splash1State extends State<Splash1> {
   @override
   void initState() {
     super.initState();
-
     Timer(const Duration(milliseconds: 2000), () {
       Navigator.pushReplacement(
         context,
@@ -31,11 +30,15 @@ class _Splash1State extends State<Splash1> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            SizedBox(
-              width: 300,
-              height: 300,
-              child: Image.asset('assets/logo.png'),
+            Padding(
+              padding: EdgeInsets.only(bottom: 20, right: 5),
+              child: SizedBox(
+                width: 300,
+                height: 300,
+                child: Image.asset('assets/logo.png'),
+              ),
             ),
           ],
         ),
